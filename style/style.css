@@ -1,0 +1,285 @@
+/* Fonts to be used
+font-family: 'Hind', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  /* padding: 10px 0; */
+  display: block;
+  background-color: black;
+}
+nav {
+  width: 80%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.sitelogo {
+  height: 100%;
+  display: table;
+  float: left;
+  padding-left: 20px;
+}
+.sitelogo h1 {
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "hind", sans-serif;
+  font-size: 44px;
+}
+.navigation {
+  float: right;
+  height: 100%;
+}
+.navigation li {
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 20px;
+  
+}
+.navigation a:hover {
+  color: gray;
+}
+.navigation li:last-child {
+  padding-right: 20px;
+}
+.navigation li a {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+}
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.home {
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: rgba(128, 128, 128, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+.home h1 {
+  font-size: 72px;
+  
+}
+.homebutton {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: .3s;
+  cursor: pointer;
+  border-radius: 25px;
+
+}
+
+.homebutton a {
+  color: white;
+}
+.homebutton:hover {
+  background-color: rgba(128, 128, 128, 0.6);
+  color: black;
+}
+.homebutton:hover a {
+  color: black;
+}
+
+
+.footer {
+  background-color: black;
+  color: white;
+  font-size: 22;
+}
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer .top {
+  color: white;
+}
+.footer .top:hover {
+  color: gray;
+}
+footer p{
+    padding-left: 20px;
+}
+
+.socials {
+    list-style-type: none;
+    padding-right: 20px;
+    background-color: white;
+    border-radius: 25px;
+}
+.socials li {
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 5px;
+
+}
+.socials li:hover {
+  opacity: 75%;
+}
+
+
+/* Workout Home */
+
+/* .workouthome {
+  height: 80vh;
+  display: flex;
+  padding: 0px 75px 75px 75px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.running, .lifting, .groupworkout {
+  text-align: center;
+}
+.running:hover, .lifting:hover, .groupworkout:hover {
+  opacity: 75%;
+}
+.workoutgreeting {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+.workoutgreeting h1 {
+  text-align: center;
+  font-size: 80px;
+} */
+
+/* Running page */
+.runninghome {
+  height: 100vh;
+  display: flex;
+  padding-top: 75px;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.workout-text {
+  padding-top: 100px;
+  padding-right: 40px;
+  text-align: center;
+  width: 400px;
+}
+
+.workout-text h1 {
+  font-size: 72px;
+}
+
+.workout-image {
+  padding-top: 100px;
+  padding-right: 40px;
+}
+
+/* Lifting page */
+
+.liftinghome {
+  height: 100vh;
+  display: flex;
+  padding-top: 75px;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.workout-text {
+  padding-top: 100px;
+  padding-right: 40px;
+  text-align: center;
+  width: 400px;
+}
+
+.workout-text h1 {
+  font-size: 72px;
+}
+
+.workout-image {
+  padding-top: 100px;
+  padding-right: 40px;
+}
+
+/* Group Workout Page */
+
+.grouphome {
+  height: 100vh;
+  display: flex;
+  padding-top: 75px;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.workout-text {
+  padding-top: 100px;
+  padding-right: 40px;
+  text-align: center;
+  width: 400px;
+}
+
+.workout-text h1 {
+  font-size: 72px;
+}
+
+.workout-image {
+  padding-top: 100px;
+  padding-right: 40px;
+}
+
+/* Contact Page */ 
+/* .contacthome {
+  height: 80vh;
+  display: flex;
+  padding: 20px 75px 75px 75px;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.contactform, .socialmedia, .about {
+  text-align: center;
+  padding: 20px 50px 50px 50px;
+  width: 30%;
+}
+.greeting {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.greeting h1 {
+  text-align: center;
+  font-size: 80px;
+}
+.socialmedia a {
+  padding: 20px;
+}
+.socialmedia a:hover {
+  opacity: 75%;
+} */
