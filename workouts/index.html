@@ -1,122 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jump Into Fitness</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../style/style.css" />
 
-    <style>
-      .workouthome {
-        height: 80vh;
-        display: flex;
-        padding: 0px 75px 75px 75px;
-        align-items: center;
-        justify-content: space-evenly;
-      }
-      .running,
-      .lifting,
-      .groupworkout {
-        text-align: center;
-      }
-      .running:hover,
-      .lifting:hover,
-      .groupworkout:hover {
-        opacity: 75%;
-      }
-      .workoutgreeting {
-        padding-top: 100px;
-        padding-bottom: 0;
-      }
-      .workoutgreeting h1 {
-        text-align: center;
-        font-size: 80px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <nav>
-          <div class="sitelogo">
-            <h1>JVF</h1>
-          </div>
-          <ul class="navigation">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="index.html">Workouts</a></li>
-            <li><a href="../contact/index.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="workoutgreeting">
-        <h1>Workout Types</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jump Into Fitness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../style/style.css" />
+
+  <style>
+    .workouthome {
+      height: 80vh;
+      display: flex;
+      padding: 0px 75px 75px 75px;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .running,
+    .lifting,
+    .groupworkout {
+      text-align: center;
+    }
+
+    .running:hover,
+    .lifting:hover,
+    .groupworkout:hover {
+      opacity: 75%;
+    }
+
+    .workoutgreeting {
+      padding-top: 100px;
+      padding-bottom: 0;
+    }
+
+    .workoutgreeting h1 {
+      text-align: center;
+      font-size: 80px;
+    }
+  </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G9MXT7PPLM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-G9MXT7PPLM');
+</script>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <div class="sitelogo">
+          <h1>JVF</h1>
+        </div>
+        <ul class="navigation">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="index.html">Workouts</a></li>
+          <li><a href="../contact/index.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="workoutgreeting">
+      <h1>Workout Types</h1>
+    </div>
+    <div class="workouthome">
+      <div class="running">
+        <h1>Running</h1>
+        <a href="running.html"><img src="../images/running.jpg" alt="Running" height="480" width="320" /></a>
       </div>
-      <div class="workouthome">
-        <div class="running">
-          <h1>Running</h1>
-          <a href="running.html"
-            ><img
-              src="../images/running.jpg"
-              alt="Running"
-              height="480"
-              width="320"
-          /></a>
-        </div>
-        <div class="lifting">
-          <h1>Weightlifting</h1>
-          <a href="lifting.html"
-            ><img
-              src="../images/lifting.jpg"
-              alt="Lifitng"
-              height="480"
-              width="320"
-          /></a>
-        </div>
-        <div class="groupworkout">
-          <h1>Group Workout</h1>
-          <a href="group.html"
-            ><img
-              src="../images/groupworkout.jpg"
-              alt="GroupWorkout"
-              height="480"
-              width="320"
-          /></a>
-        </div>
+      <div class="lifting">
+        <h1>Weightlifting</h1>
+        <a href="lifting.html"><img src="../images/lifting.jpg" alt="Lifitng" height="480" width="320" /></a>
       </div>
-      <div class="footer">
-        <footer>
-          <p>Created By Jesus Vera &copy;</p>
-          <a class="top" href="">Back to Top</a>
-          <ul class="socials">
-            <li>
-              <a href="#"
-                ><img
-                  class="facebook"
-                  src="../images/facebook-white.png"
-                  alt="Facebook"
-                  height="30px"
-                  width="30px"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  class="instagram"
-                  src="../images/instagram-white.png"
-                  alt="Instagram"
-                  height="30px"
-                  width="30px"
-              /></a>
-            </li>
-          </ul>
-        </footer>
+      <div class="groupworkout">
+        <h1>Group Workout</h1>
+        <a href="group.html"><img src="../images/groupworkout.jpg" alt="GroupWorkout" height="480" width="320" /></a>
       </div>
     </div>
-  </body>
+    <div class="footer">
+      <footer>
+        <p>Created By Jesus Vera &copy;</p>
+        <a class="top" href="">Back to Top</a>
+        <ul class="socials">
+          <li>
+            <a href="#"><img class="facebook" src="../images/facebook-white.png" alt="Facebook" height="30px"
+                width="30px" /></a>
+          </li>
+          <li>
+            <a href="#"><img class="instagram" src="../images/instagram-white.png" alt="Instagram" height="30px"
+                width="30px" /></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </div>
+</body>
+
 </html>

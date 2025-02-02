@@ -1,196 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jump Into Fitness</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../style/style.css" />
-    <style>
-      .contacthome {
-        height: 80vh;
-        display: flex;
-        padding: 20px 75px 75px 75px;
-        align-items: flex-start;
-        justify-content: space-evenly;
-      }
-      .contactform,
-      .socialmedia,
-      .about {
-        text-align: center;
-        padding: 20px 50px 50px 50px;
-        width: 30%;
-      }
-      
-      .greeting {
-        padding-top: 100px;
-        padding-bottom: 100px;
-      }
-      .greeting h1 {
-        text-align: center;
-        font-size: 80px;
-      }
-      .socialmedia a {
-        padding: 20px;
-      }
-      .socialmedia a:hover {
-        opacity: 75%;
-      }
-      .submit {
-        background-color: black;
-        padding: 5px;
-        color: white;
-        margin-bottom: 7px;
-      }
-      .submit:hover {
-        cursor: pointer;
-        opacity: 75%;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <nav>
-          <div class="sitelogo">
-            <h1>JVF</h1>
-          </div>
-          <ul class="navigation">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../workouts/index.html">Workouts</a></li>
-            <li><a href="index.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="greeting">
-        <h1>Keep In Touch</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jump Into Fitness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../style/style.css" />
+  <style>
+    .contacthome {
+      height: 80vh;
+      display: flex;
+      padding: 20px 75px 75px 75px;
+      align-items: flex-start;
+      justify-content: space-evenly;
+    }
+
+    .contactform,
+    .socialmedia,
+    .about {
+      text-align: center;
+      padding: 20px 50px 50px 50px;
+      width: 30%;
+    }
+
+    .greeting {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .greeting h1 {
+      text-align: center;
+      font-size: 80px;
+    }
+
+    .socialmedia a {
+      padding: 20px;
+    }
+
+    .socialmedia a:hover {
+      opacity: 75%;
+    }
+
+    .submit {
+      background-color: black;
+      padding: 5px;
+      color: white;
+      margin-bottom: 7px;
+    }
+
+    .submit:hover {
+      cursor: pointer;
+      opacity: 75%;
+    }
+  </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G9MXT7PPLM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-G9MXT7PPLM');
+</script>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <div class="sitelogo">
+          <h1>JVF</h1>
+        </div>
+        <ul class="navigation">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../workouts/index.html">Workouts</a></li>
+          <li><a href="index.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="greeting">
+      <h1>Keep In Touch</h1>
+    </div>
+    <div class="contacthome">
+      <div class="contactform">
+        <h1>Contact Us</h1>
+        <form action="">
+          <fieldset>
+            <legend>Please Fill With Your Information</legend>
+            <br />
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" size="20" placeholder="Your name.." />
+            <br />
+            <br />
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname" size="20" placeholder="Your last name.." />
+            <br />
+            <br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" size="30" placeholder="information@example.com" />
+            <br />
+            <br />
+          </fieldset>
+          <fieldset>
+            <legend>How do you like to stay active?</legend>
+            <br />
+            <label for="inquiry">Please type below</label>
+            <br />
+            <textarea name="inquiry" id="inquiry" cols="30" rows="10" placeholder="Fill..."></textarea>
+            <br />
+            <input class="submit" type="submit" id="submit" value="Submit!" />
+          </fieldset>
+        </form>
       </div>
-      <div class="contacthome">
-        <div class="contactform">
-          <h1>Contact Us</h1>
-          <form action="">
-            <fieldset>
-              <legend>Please Fill With Your Information</legend>
-              <br />
-              <label for="fname">First Name:</label>
-              <input
-                type="text"
-                id="fname"
-                name="firstname"
-                size="20"
-                placeholder="Your name.."
-              />
-              <br />
-              <br />
-              <label for="lname">Last Name:</label>
-              <input
-                type="text"
-                id="lname"
-                name="lastname"
-                size="20"
-                placeholder="Your last name.."
-              />
-              <br />
-              <br />
-              <label for="email">Email:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                size="30"
-                placeholder="information@example.com"
-              />
-              <br />
-              <br />
-            </fieldset>
-            <fieldset>
-              <legend>How do you like to stay active?</legend>
-              <br />
-              <label for="inquiry">Please type below</label>
-              <br />
-              <textarea
-                name="inquiry"
-                id="inquiry"
-                cols="30"
-                rows="10"
-                placeholder="Fill..."
-              ></textarea>
-              <br />
-              <input class="submit" type="submit" id="submit" value="Submit!" />
-            </fieldset>
-          </form>
-        </div>
-        <div class="socialmedia">
-          <h1>Socials</h1>
-          <br />
-          <br />
-          <br />
-          <a href="#"
-            ><img
-              src="../images/facebook-black.svg"
-              alt="Facebook Link"
-              height="75px"
-              width="75px"
-          /></a>
-          <a href="#"
-            ><img
-              src="../images/instagram-black.svg"
-              alt="Instagram Link"
-              height="75px"
-              width="75px"
-          /></a>
-        </div>
-        <div class="about">
-          <h1>About Us</h1>
-          <br />
-          <p>
-            JVF, is an indepently ran blog to help build community in the
-            fitness world. I strive to make connections with anyone who is
-            interested in chasing fitness goals and is looking for community
-            while doing so!
-          </p>
-          <br />
-          <h2>My Favorite Ways to Train?</h2>
-          <br />
-          <p>
-            I like a variety of physical activities, but my top three are
-            running, strength training and group HIIT classes at local studios!
-          </p>
-        </div>
+      <div class="socialmedia">
+        <h1>Socials</h1>
+        <br />
+        <br />
+        <br />
+        <a href="#"><img src="../images/facebook-black.svg" alt="Facebook Link" height="75px" width="75px" /></a>
+        <a href="#"><img src="../images/instagram-black.svg" alt="Instagram Link" height="75px" width="75px" /></a>
       </div>
-      <div class="footer">
-        <footer>
-          <p>Created By Jesus Vera &copy;</p>
-          <a class="top" href="">Back to Top</a>
-          <ul class="socials">
-            <li>
-              <a href="#"
-                ><img
-                  class="facebook"
-                  src="../images/facebook-white.png"
-                  alt="Facebook"
-                  height="30px"
-                  width="30px"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  class="instagram"
-                  src="../images/instagram-white.png"
-                  alt="Instagram"
-                  height="30px"
-                  width="30px"
-              /></a>
-            </li>
-          </ul>
-        </footer>
+      <div class="about">
+        <h1>About Us</h1>
+        <br />
+        <p>
+          JVF, is an indepently ran blog to help build community in the
+          fitness world. I strive to make connections with anyone who is
+          interested in chasing fitness goals and is looking for community
+          while doing so!
+        </p>
+        <br />
+        <h2>My Favorite Ways to Train?</h2>
+        <br />
+        <p>
+          I like a variety of physical activities, but my top three are
+          running, strength training and group HIIT classes at local studios!
+        </p>
       </div>
     </div>
-  </body>
+    <div class="footer">
+      <footer>
+        <p>Created By Jesus Vera &copy;</p>
+        <a class="top" href="">Back to Top</a>
+        <ul class="socials">
+          <li>
+            <a href="#"><img class="facebook" src="../images/facebook-white.png" alt="Facebook" height="30px"
+                width="30px" /></a>
+          </li>
+          <li>
+            <a href="#"><img class="instagram" src="../images/instagram-white.png" alt="Instagram" height="30px"
+                width="30px" /></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </div>
+</body>
+
 </html>
